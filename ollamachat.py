@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit_authenticator as stauth
 import ollama
 import csv
 import json
@@ -237,6 +236,8 @@ if st.session_state.logged_in:
 
         # 切换模型
         models = [
+                'qwen:0.5b',
+                'gemma:2b',
                 'yi',
                 'llama3:8b',
             ]
